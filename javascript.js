@@ -28,7 +28,7 @@ let gameover = false;
         for(i=0;i < winningCombinations.length; i++){
          const [a, b, c] = winningCombinations[i];
             if (gameBoard[a] != "" && gameBoard[a] == gameBoard[b] && gameBoard [a] == gameBoard[c]){
-                    console.log(`${currentPlayer.name} wins!`);
+                    alert(`${currentPlayer.name} wins!`);
                     gameover = true;
                 }
         }
